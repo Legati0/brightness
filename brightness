@@ -10,7 +10,7 @@ max="`cat /sys/class/backlight/$device/max_brightness`"
 
 # no value: print current
 if [ -z "$1" ]; then
-	echo $current
+	echo "$current / $max"
 	exit
 fi
 
